@@ -1,0 +1,1000 @@
+                                body {
+                                    background: white;
+                                    font-family: 'Roboto', sans-serif;
+                                    margin: 0;
+                                }
+                                
+                                .contenedor {
+                                    max-width: 1200px;
+                                    width: 100%;
+                                    margin: 0 auto;
+                                    /* background-color: green; */
+                                }
+                                
+                                h1.tc {
+                                    color: green;
+                                    text-align: center;
+                                    text-transform: uppercase;
+                                    
+                                } 
+
+                                
+                                
+.site-header {
+background: green;
+color: white;
+padding: 1.3em 0;
+position: relative;
+}                                
+                                                               
+                                .site-header::after {
+                                    content: '';
+                                    clear: both;
+                                    display: block;
+                                }
+                                
+                              /*   .logo {
+                                    float: left;
+                                    font-size: 1rem;
+                                    margin: 0;
+                                    text-transform: uppercase;
+                                    font-weight: 700;
+                                } */
+                                
+                                /* menu-movil */
+                                .site-nav {
+                                    top: 100%;
+                                    right: 0;
+                                    position: absolute;
+                                    background: #464655;
+                                    clip-path: circle(0px at top right);
+                                    transition: clip-path ease-in-out 700ms;
+                                    
+                                }
+                                /* menu-movil */
+                                .site-nav-open {
+                                    clip-path: circle(150% at top right);
+                                }
+                                /* menu-movil */
+                                .site-nav ul {
+                                    margin: 0;
+                                    padding: 0;
+                                    list-style: none;
+                                }
+                                /* menu-movil */
+                                .site-nav li {
+                                    border-bottom: 1px solid #575766;
+                                }
+                                /* menu-movil */
+                                .site-nav li:last-child {
+                                    border-bottom: none;
+                                }
+                                /* menu-movil */
+                                .site-nav a {
+                                    color: #ebedb3;
+                                    display: block;
+                                    padding: 2em 6em;
+                                    text-transform: uppercase;
+                                    text-decoration: none;
+                                }
+                                
+                              /*   .redes a {
+                                    color: #ebedb3;
+                                    display: block;
+                                    padding: 2em 6em;
+                                    text-transform: uppercase;
+                                    text-decoration: none;
+                                    color: red;
+                                } */
+                                
+.site-nav a:hover,
+.site-nav a:focus {
+background: #e4b363;
+color: #464655;
+                                }
+
+                               /*  @media only screen and (min-width: 768px) {
+                                    .site-nav a:hover,
+                                .site-nav a:focus {
+                                   background: #e4b363;
+                                    color: red;
+                                }
+                                } */
+
+                                
+
+                                
+                                
+                                .redes a:hover,
+                                .site-nav a:focus {
+                                    background: #e4b363;
+                                    color: #464655;
+                                }
+                                
+                                .site-nav--icon {
+                                    display: inline-block;
+                                    font-size: 1.5em;
+                                    margin-right: 1em;
+                                    width: 1.1em;
+                                    text-align: right;
+                                    color: rgba(255, 255, 255, .4);
+                                }
+                                
+                                .menu-toggle {
+                                    padding: 1em;
+                                    position: absolute;
+                                    top: .5em;
+                                    right: .5em;
+                                }
+                                
+                                .menu-open .hamburger {
+                                    transform: rotate(45deg);
+                                }
+                                
+                                .menu-open .hamburger::before {
+                                    opacity: 0;
+                                }
+                                
+                                .menu-open .hamburger::after {
+                                    transform: translateY(-3px) rotate(-90deg);
+                                }
+                                
+                                .hamburger,
+                                .hamburger::before,
+                                .hamburger::after {
+                                    content: '';
+                                    display: block;
+                                    background: #ebebd3;
+                                    height: 3px;
+                                    width: 1.75em;
+                                    border-radius: 3px;
+                                    transition: all ease-in-out 500ms;
+                                }
+                                
+                                .hamburger::before {
+                                    transform: translateY(-6px);
+                                }
+                                
+                                .hamburger::after {
+                                    transform: translateY(3px);
+                                }
+
+                                
+ /* menu-pc */
+@media (min-width:768px) {
+.menu-toggle {
+display: none;
+}
+ /* menu-pc */
+.site-nav {
+height: auto;
+position: relative;
+background: transparent;
+clip-path: initial;
+text-align: center;
+background: green;
+
+margin-top: -20px;                                                                                           
+ }
+
+
+.site-nav li {
+display: inline-block;
+border: none;
+padding: 5px;                                                                          
+}
+
+.site-nav a {
+padding: 0;
+margin: 10px 10px;
+font-size: 1.4rem;
+margin:10 2px;
+}
+
+.site-nav--icon {
+margin: 0 5px;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+background-color: rgba(0,255,0,0.2)
+       
+}
+}
+   /************SECCION VERDE********************/     
+
+img {
+max-width: 100%;
+}
+
+/*tamaño img movil*/
+.imagenbaner{
+height: 400px;
+border: 5px solid #ebedb3;
+border-radius: 2%;
+margin: 0 10px;
+
+}
+
+/*PC*/
+@media only screen and (min-width: 768px) {
+.imagenbaner{
+height: 555px;
+                                    border: 5px solid #ebedb3;
+                                    border-radius: 2%;
+                                    }
+                                }
+
+
+                                .blog{
+                                    text-align: center;
+                                    width: 90%;
+                                    
+                                }
+                                
+                                .mainh2 {
+                                    color: green;
+                                    padding: 0px 0px 0px 45px;
+                                    margin: 0;
+                                    font-size: 2.5rem;
+                                }
+
+                                @media(min-width: 768px) {
+                                    .mainh2{
+                                         color: #ebedb3;
+                                    }
+                                    /* .domicilios{
+                                        color: #ebedb3;
+                                        font-style: oblique;
+                                } */
+                            }
+                                .articuloprincipal{
+                                     
+                                   width: 90%; 
+                                    padding: 0px 10px 0px 10px;
+                                    text-align: justify;
+                                }
+
+                                @media(min-width: 768px) {
+                                    .articuloprincipal{
+                                         height: 150px;
+                                         color: green;
+                                         width: auto;
+                                         margin-top: 40px;
+                                    }
+                                }
+
+                                
+                                .domicilios{
+                                    color: green;
+                                    font-style: oblique;
+                                }
+
+                                @media(min-width: 768px) {
+                                    .domicilios{
+                                         color: #ebedb3;
+                                    }
+                                }
+
+
+
+                                /* .contenido-principal { */
+                                    /* background-color: rgb(179, 149, 109); */
+                                   /*  background-image: url(../img/banner.jpg);
+                                    background-repeat: no-repeat;
+                                    background-position: center center;
+                                    background-size: cover;
+                                    height: 100%;
+                                } */
+                                
+                                .texto-header p {
+                                    text-align: center;
+                                    font-size: 1.2rem;
+                                }
+                                
+                                .texto-header p {
+                                    text-align: center;
+                                }
+                                
+                                .prueba {
+                                    background-color: #e4b363;
+                                }
+                                
+                                
+                                
+                               /*  .contenido-principaltres {
+                                    background-color: white;
+                                    margin-top: 3rem;
+                                }
+ */
+                             
+@media(min-width: 768px) {
+                                       .contenido-principaldos {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        background: green;
+                                        height: 38rem;
+                                        justify-content: space-between;
+                                        overflow: scroll;
+
+                                    }
+                                } 
+
+                                @media(min-width: 1024px) {
+                                    .contenido-principaldos {
+                                     display: flex;
+                                     flex-wrap: wrap;
+                                     background: green;
+                                     height: 38rem;
+                                     justify-content: space-between;
+                                     overflow-y:hidden;
+
+                                 }
+                             }
+                               
+                                  
+                                    /* main blog donde encontrarnos pc*/
+
+                                    @media(min-width: 768px) {
+                                       
+                                        .blog {
+                                            flex-basis: 50%;
+                                            order: -1;
+                                        }
+                                        
+                                    
+                                }
+                                
+                                .bx-wrapper,
+                                .bx-viewport {
+                                    max-width: 80% !important;
+                                    height: 400px !important;
+                                    margin: 0 auto;
+                                }
+                                
+                                .bxslider {
+                                    color: yellow;
+                                }
+                                /****trescolumnas***/
+                                
+                                .entrada-blog a {
+                                    display: inline-block;
+                                    /* background-color: green; */
+                                    color: green;
+                                    padding: 0px 8px;
+                                    text-decoration: none;
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    
+                                }
+                                .redsocial a{
+                                    
+                                    color: blue;
+                                }
+                                .redsocialinstagram a{
+                                    
+                                    color: red;
+                                }
+
+                                .redsocialinstagram a{
+                                    
+                                    color: red;
+                                }
+                                .redsocialwhatsapp a{
+                                    color: green;
+                                
+                                 }
+                                
+                                
+                                 @media (min-width:768px) {
+                                 .redsocialwhatsapp a {
+                                
+                                color: black;
+                                
+                                   }}
+
+
+
+                                /* Productos */
+                                @media (min-width:768px) {
+                                    .tres-columnas {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        flex-wrap: wrap;
+                                        margin-top: -30px;
+                                    }
+
+                                   
+                                    .entrada-blog {
+                                        flex-basis: calc(33.3% - 1rem);
+                                        height: 555px;
+                                    }
+                                } 
+
+
+                                /**********entrada blog gallet*******/
+
+
+.gallet{
+    height: 220px;
+    width: auto;
+}
+
+@media only screen and (min-width: 480px) {
+    .gallet{
+        height: 220px;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .gallet{
+        height: 320px;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .gallet{
+        height: 300px;
+        width: auto;
+    }
+}
+
+/***tamaños cuadros de gallet**/
+.tres-columnas{
+    margin-top: 250px;
+    text-align: center;
+    width: 80%;
+}
+
+@media only screen and (min-width: 480px) {
+    .tres-columnas {
+        margin-top: 120px; 
+        
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .tres-columnas {
+        margin-top: 50px; 
+        
+    }
+    
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .tres-columnas {
+        margin-top: 30px; 
+        
+    }
+}
+
+
+
+/*******************contenedor tortas**************/
+.contenedortortas{
+    margin-top: 70px;
+    text-align: center;
+    width: 80%;
+}
+
+@media only screen and (min-width: 480px) {
+    .contenedortortas {
+        margin-top: 70px; 
+        
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contenedortortas {
+        margin-top: 40px; 
+        
+    }
+    
+}
+
+.articulotortas{
+    height: 300px;
+    width: auto;
+}
+
+@media only screen and (min-width: 480px) {
+    .articulotortas{
+        height: 300px;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .articulotortas{
+        height: 350px;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .articulotortas{
+        height: 300px;
+        width: auto;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .articulotortas{
+        margin-top: 30px; 
+        
+    }
+}
+
+/***altura****/
+
+
+
+
+/*********suplementos******************/
+.suplementos {
+    margin-top: 10px;
+    text-align: center;
+    /* width: 50%; */
+}
+
+@media only screen and (min-width: 480px) {
+    .suplementos{
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .suplementos{
+        margin-top: 65px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .suplementos{
+        margin-top: 60px;
+    }
+}
+
+
+@media only screen and (min-width: 480px) {
+    .articlesuplementos{
+        height: 430px;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .articlesuplementos{
+        height: 470px;
+        width: auto;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .articlesuplementos{
+        height: 430px;
+        width: auto;
+    }
+}
+
+
+
+                                /****mapa**/
+                                
+                                .mapa {
+                                    background-color: red;
+                                    height: 1000px;
+                                }
+                                
+                                .mapauno {
+                                    margin-top: 1rem;
+                                    height: 250px;
+                                }
+                                /*footer*/
+                                
+                                footer {
+                                    font-family: Helvetica, Arial;
+                                    color: white;
+                                    height: 47px;
+                                    background: rgba(51, 51, 51, 0.70);
+                                    margin: 0px auto;
+                                    /* width: 80%; */
+                                    padding-left: 20px;
+                                    padding-right: 20px;
+                                    margin-top: 50px;
+                                    line-height: 47px;
+                                }
+                                
+                                .subir {
+                                    color: white;
+                                    text-decoration: none;
+                                    display: block;
+                                    float: right;
+                                }
+                                
+                                .elaborada {
+                                    color: green;
+                                    font-size: 0.8em;
+                                    font-style: oblique;
+                                }
+                                
+                                #global {
+                                    /*ancho */
+                                    width: 80%;
+                                    margin: 0px auto;
+                                    margin-top: 40px;
+                                    /*margen interior */
+                                    padding: 0px;
+                                    /* background: green; */
+                                    /*borde de color grisesito para la caja  */
+                                    /* box-shadow: 0px 0px 2px red; */
+                                }
+                                
+                                h2 {
+                                    color: #ebebd3;
+                                    letter-spacing: 1.5pt;
+                                }
+                                
+                                h4 {
+                                    color: #ebedb3;
+                                    color: red;
+                                    font-size: 1.7rem;
+                                    letter-spacing: 1.5pt;
+                                }
+                                
+                                .cont-info {
+                                    color: #868686;
+                                    padding-right: 10px;
+                                    font-size: 1.4rem;
+                                    text-align: justify;
+                                }
+
+                                @media only screen and (min-width: 768px) {
+                                    .cont-info {
+                                        color: black;
+                                        padding-right: 10px;
+                                        font-size: 1.4rem;
+                                        text-align: justify;
+                                    }
+                                }
+
+
+
+                                
+                                h2.infoproductos {
+                                    text-align: center;
+                                    color: green;
+                                }
+                                /*******complemento*******/
+                                
+                                .complemento {
+                                    height: 180px;
+                                    background-color: WHITE;
+                                    /* margin-top: 440px; */
+                                }
+                                
+                                .deleitar {
+                                    border-radius: 50%;
+                                    margin: 10px auto;
+                                    display: block;
+                                }
+                                /****MODAL****/
+                                /*ventana modal*/
+                                
+                                .mod {
+                                    color: green;
+                                    text-align: center;
+                                }
+                                
+                                .modal {
+                                    width: 100%;
+                                    height: 100vh;
+                                    background: rgba(0, 0, 0, .6);
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    display: flex;
+                                    animation: modal 2s 3s forwards;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                }
+                                
+                                .contenidomodal {
+                                    margin: auto;
+                                    width: 40%;
+                                    height: 40%;
+                                    background: white;
+                                    border-radius: 10px;
+                                }
+                                
+                                #cerrar {
+                                    display: none;
+                                }
+                                
+                                #cerrar+label {
+                                    /* position: fixed; */
+                                    position: absolute;
+                                    color: #fff;
+                                    font-size: 25px;
+                                    z-index: 50;
+                                    background: darkred;
+                                    height: 40px;
+                                    width: 40px;
+                                    line-height: 40px;
+                                    border-radius: 50%;
+                                    right: 10px;
+                                    cursor: pointer;
+                                    animation: modal 2s 3s forwards;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                }
+                                
+                                #cerrar:checked+label,
+                                #cerrar:checked~.modal {
+                                    display: none;
+                                }
+                                
+                                @keyframes modal {
+                                    100% {
+                                        visibility: visible;
+                                        opacity: 1;
+                                    }
+                                }
+                                
+                                #btn-cerrar {
+                                    text-align: center;
+                                }
+                                
+                                .redes {
+                                    color: red;
+                                    font-size: 2rem;
+                                }
+                                
+                                .infoproductosdeleitar {
+                                    font-size: 1.5rem;
+                                }
+                                
+                                .complentoparrafo {
+                                    color: #868686;
+                                    padding-right: 10px;
+                                    font-size: 1.4rem;
+                                    text-align: justify;
+                                }
+
+                                @media only screen and (min-width: 768px) {
+                                    .complentoparrafo {
+                                        font-size: 1.2rem;
+                                        color: green;
+
+                                    }
+                                }
+
+
+                                
+                                /**EFECTOS PARA LAS IMAGENES*/
+                                
+                                div.zoom img {
+                                    max-width: 100%;
+                                    /* filter: gray;
+                                    -webkit-filter: grayscale(1); */
+                                    -webkit-transition: all .5s ease-out;
+                                }
+                                
+                                .zoom:hover img {
+                                    max-width: 100%;
+                                    filter: grayscale(0);
+                                    /* efecto de zoon */
+                                    -webkit-transform: scale(1.2);
+                                    /* transform: rotate(3deg); */
+                                }
+                                /*SECCION TABLA PRECIO*/
+                                
+                                ul.lista-precios>li {
+                                    padding: 10px;
+                                }
+                                
+                                @media only screen and (min-width: 768px) {
+                                    ul.lista-precios>li {
+                                        float: left;
+                                        width: 30.3%;
+                                    }
+                                }
+
+
+                               /*  div.tabla-precio {
+                                    border: 3px solid #e1e1e1;
+                                    background-color: #ffffff;
+                                    padding: 40px 0;
+                                    text-align: center;
+                                    transition: all .3s ease;
+
+                                } */
+                               
+                                
+                                 
+                                div.tabla-precio:hover {
+                                    transform: scale(1.1);
+                                    border: 2px solid green;
+                                    box-shadow: 0px 0px 50px #666;
+                                }
+                                
+                                div.tabla-precio p.numero {
+                                    color: #000000;
+                                    margin-top: 20px 0;
+                                }
+                                
+                                div.tabla-precio ul li {
+                                    font-family: 'PT Sans', sans-serif;
+                                    font-size: 14px;
+                                    /* margin-bottom: 20px; */
+                                    text-transform: uppercase;
+                                    color: #868686;
+                                    line-height: 26px;
+                                    text-align: left;
+                                    padding: 0 0 0 40px;
+                                    
+                                    
+                                }
+
+                                @media only screen and (min-width: 768px) {
+                                    div.tabla-precio ul li {
+                                        font-family: 'PT Sans', sans-serif;
+                                        font-size: 12px;
+                                        margin-bottom: 20px;
+                                        text-transform: uppercase;
+                                        color: #868686;
+                                        line-height: 23px;
+                                        text-align: left;
+                                        padding: 0 0 0 5px;
+                                        height: 15px;
+                                        
+                                    }
+                                }
+@media only screen and (min-width: 1024px) {
+div.tabla-precio ul li {
+font-family: 'PT Sans', sans-serif;
+font-size: 14px;
+margin-bottom: 15px;
+text-transform: uppercase;
+color: #868686;
+line-height: 26px;
+text-align: left;
+padding: 0 0 0 40px;                                      
+}
+}
+
+
+
+
+                                
+                                div.tabla-precio ul li::before {
+                                    font-family: 'fontAwesome';
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    padding: 0 5px;
+                                    font-size: 20px;
+                                    color: green;
+                                   
+                                }
+                                
+                                div.tabla-precio h3 {
+                                    font-family: 'Oswald', sans-serif;
+                                    font-size: 16px;
+                                    text-transform: uppercase;
+                                }
+                                
+                                li {
+                                    list-style: none;
+                                }
+
+                                .parrafoseccion{
+                                    color: #868686;
+                                }
+
+                                div.tabla-precio {
+                                    /* border: 3px solid #e1e1e1; */
+                                    background-color: #ffffff;
+                                    padding: 5px 0;
+                                    text-align: center;
+                                    transition: all .3s ease;
+                                    border-bottom: 2px solid green;
+                                  
+                                   
+                                }
+
+                                @media only screen and (min-width: 768px) {
+                                    div.tabla-precio {
+                                        border: 3px solid #e1e1e1;
+                                        background-color: #ffffff;
+                                        padding: 40px 0;
+                                        text-align: center;
+                                        transition: all .3s ease;
+                                      
+                                        
+                                    }
+                                }
+
+                               
+
+                               /*  span.redsocial{
+                                    background-color: blue;
+                                } */
+
+                                .domicilioscontacto{
+                                    color: green;
+                                }
+
+.container{
+    margin-top: 30px;
+    height: 400px;
+
+}
+@media only screen and (min-width: 480px) {
+    .container{
+        margin-top: 30px;
+        height: 400px;
+    
+    }
+
+}
+
+
+
+
+                                .carousel {
+                                    min-height: 200px;
+                                }
+
+
+                                @media only screen and (min-width: 768px) {
+                                    .carousel {
+                                        min-height: 200px;
+                                    }
+    
+                                }
+                                
+                                .carousel .carousel-item {
+                                
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    user-select: none;
+                                    width: 500px;
+                                    height: 500px;
+                                
+                                }
+                                
+                                .carousel .carousel-item img {
+                                    width: 100%;
+                                    height: 70%;
+                                    object-fit: cover;
+                                    position: absolute;
+                                   top: 0;
+                                    left: 0;
+                                    z-index: -1;
+                                    border-radius: 15px;
+                                }
+                                
+                                .carousel .indicators .indicator-item {
+                                    transform: rotate(45deg);
+                                    margin: 0 15px;
+                                    background-color: red;
+                                   
+                                }
+
+                                ul.indicators{
+                                    padding-bottom: 60px;
+                                }
+
+                              
+
+                                
+
+                               
+     

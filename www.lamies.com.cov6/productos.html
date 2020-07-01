@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+    <!--se busca en internet momemnt.js para cambiar la hora a mm-aa--yyyy  con un metodo en el archivo main.js Y tambien hago un foreach-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/locale/es.js"></script>
+
+    <!-- Mis Scripts -->
+    <title>Tienda Naturista La Mies</title>
+</head>
+
+<body>
+   
+    <header class="site-header contenedor ">
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="index.html"><i class="fa fa-home site-nav--icon"></i></i>Inicio</a></li>
+                <li><a href="nosotros.html"><i class="fa fa-info site-nav--icon"></i>Nosotros</a></li>
+                <li><a href="#"><i class="fa fa-pencil-alt site-nav--icon"></i>Productos</a></li>
+                <li><a href="contactanos.html"><i class="fa fa-envelope site-nav--icon"></i>Contacto</a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
+    </header>
+
+
+
+   
+
+    <article class="articuloprincipal ">
+        <h2 class=" infoproductos centrar">VARIEDAD DE PRODUCTOS:</h2>
+
+            <div class="contenedor complemento ">
+                
+                <!-- <p class="complentoparrafo"><span class="infoproductosdeleitar"><strong>¡Ven y visitanos!</strong></span> Prueba nuestras deliciosas tortas de zanahoria, leche de soya y de almendras, sumos de uva y de zanahoria, ricas tortas integrales y dieteticas, de chocolate,
+                 naranja, zanahoria etc, y una variedad de galletas entre ellas de coco y salvado. Tambien puedes deleitar los deliciosos panes de brevas, maltas, mr tea, agua, refrescos, frutos secos, arandanos, chicharrines y otros mas.</p> -->
+                 <p class="cont-info "> Estamos en  la avenida la playa, en la <span><strong>calle 52 #45-54 </strong></span>edificio los Búcaros, al frente de comfenalco, 
+                    diagonal a la clínica Soma. Teléfonos: (034)5140913, (034)5129421, celular 3216150192, <span class="redsocial"><a href="https://www.facebook.com/miessalud/"target="_blank"><i class="fab fa-facebook" ></i></a></span> <span class="redsocialinstagram"><a href="https://www.instagram.com/miessalud/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a></span>
+                    <span class="redsocialwhatsapp"><a href="https://api.whatsapp.com/send?phone=+573216150192"target="_blank"><i class="fab fa-whatsapp"></i></a></span>
+                    <!-- <br><br><span class="domicilios"><strong class="domicilios">DOMICILIOS: (034)5140913 - (034)5129421.</strong></span> -->
+            </div>
+    </article>
+
+
+   
+
+    <div class="contenedor tres-columnas">
+
+        <article class="entrada-blog">
+            <div class="tabla-precio bloque1">
+                <h1 class="tc">Tortas</h1>
+                <img class="deleitar" src="img/dermocosmeticos1.jpg">
+                
+            </div>
+        </article>
+
+        <article class="entrada-blog">
+            <div class="tabla-precio bloque1">
+                <h1 class="tc">Tortas</h1>
+                <img class="deleitar" src="img/dermocosmeticos1.jpg">
+                        
+            </div>
+        </article>
+
+        <article class="entrada-blog">
+            <div class="tabla-precio bloque1">
+                <h1 class="tc">Tortas</h1>
+                <img class="deleitar" src="img/dermocosmeticos1.jpg">
+                
+                
+            </div>
+        </article>
+
+
+
+
+
+
+
+
+        <article class="entrada-blog">
+            <div class="tabla-precio bloque1">
+                <h1 class="tc">Tortas</h1>
+                <img class="deleitar" src="img/dermocosmeticos1.jpg">
+                
+                
+            </div>
+        </article>
+
+        <article class="entrada-blog">
+            <div class="tabla-precio bloque1">
+                <h1 class="tc">Tortas</h1>
+                <img class="deleitar" src="img/dermocosmeticos1.jpg">
+                
+                
+            </div>
+        </article>
+
+        <article class="entrada-blog">
+            <div class="tabla-precio bloque1">
+                <h1 class="tc">Tortas</h1>
+                <img class="deleitar" src="img/dermocosmeticos1.jpg">
+                
+                
+            </div>
+        </article>
+        <article class="entrada-blog">
+            <div class="tabla-precio bloque1">
+                <h1 class="tc">Tortas</h1>
+                <img class="deleitar" src="img/dermocosmeticos1.jpg">
+                
+                
+            </div>
+        </article>
+        <article class="entrada-blog">
+            <div class="tabla-precio bloque1">
+                <h1 class="tc">Tortas</h1>
+                <img class="deleitar" src="img/dermocosmeticos1.jpg">
+                
+                
+            </div>
+        </article>
+        <article class="entrada-blog">
+            <div class="tabla-precio bloque1">
+                <h1 class="tc">Tortas</h1>
+                <img class="deleitar" src="img/dermocosmeticos1.jpg">
+                
+                
+            </div>
+        </article>
+        <article class="entrada-blog">
+            <div class="tabla-precio bloque1">
+                <h1 class="tc">Tortas</h1>
+                <img class="deleitar" src="img/dermocosmeticos1.jpg">
+                
+                
+            </div>
+        </article>
+        <article class="entrada-blog">
+            <div class="tabla-precio bloque1">
+                <h1 class="tc">Tortas</h1>
+                <img class="deleitar" src="img/dermocosmeticos1.jpg">
+                
+                
+            </div>
+        </article>
+        <article class="entrada-blog">
+            <div class="tabla-precio bloque1">
+                <h1 class="tc">Tortas</h1>
+                <img class="deleitar" src="img/dermocosmeticos1.jpg">
+                
+                
+            </div>
+        </article>
+
+
+
+       
+    </div>
+
+
+    
+</body>
+
+<footer>
+
+    <p> <span class="elaborada">Elaborada por: Alexander Zabala - contacto 304 598 91 63 &copy;</span>
+
+        <a href="#" class="subir">Ir arriba</a></p>
+
+</footer>
+
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="css/materialize.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+    <!--se busca en internet momemnt.js para cambiar la hora a mm-aa--yyyy  con un metodo en el archivo main.js Y tambien hago un foreach-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/locale/es.js"></script>
+
+    <!-- Mis Scripts -->
+    <title>Tienda Naturista La Mies</title>
+</head>
+
+<body>
+    <!-- <header class="header-contenedor"> -->
+    <header class="site-header contenedor ">
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="index.html"><i class="fa fa-home site-nav--icon"></i></i>Inicio</a></li>
+                <li><a href="nosotros.html"><i class="fa fa-info site-nav--icon"></i>Nosotros</a></li>
+                <li><a href="#"><i class="fa fa-pencil-alt site-nav--icon"></i>Productos</a></li>
+                <li><a href="contactanos.html"><i class="fa fa-envelope site-nav--icon"></i>Contacto</a></li>
+            </ul>
+        </nav> <!-- site-nav -->
+        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
+    </header><!--  header class="header-contenedor -->
+
+
+
+    <div id="principal" class="contenido-principaldos contenedor">
+
+        <section class="blog">
+
+            <div class="entrada-blog">
+                <div class="imagen">
+                    <img class="imagenbaner" src="img/lamies.jpg" alt="Imagen blog">
+                </div> <!-- imagen -->
+            </div> <!-- entrada-blog -->
+
+        </section> <!-- blog -->
+
+
+        <section class="blog">
+
+            <article class="entrada-blog">
+
+                <h2 class="mainh2">¿Dónde encontrarnos? </h2>
+                <ul class="cursos-lista">
+                    <li class="curso">
+                      
+                        <p class="cont-info"> En la avenida la playa, en la <span><strong>calle 52 #45-54 </strong></span>edificio los Búcaros, al frente de comfenalco, 
+                            diagonal a la clínica Soma. Teléfonos: (034)5140913, (034)5129421, celular 3216150192, <span class="redsocial"><a href="https://www.facebook.com/miessalud/"target="_blank"><i class="fab fa-facebook" ></i></a></span> <span class="redsocialinstagram"><a href="https://www.instagram.com/miessalud/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a></span>
+                            <span class="redsocialwhatsapp"><a href="https://api.whatsapp.com/send?phone=+573216150192"target="_blank"><i class="fab fa-whatsapp"></i></a></span>
+                            <br><br><span class="domicilios"><strong class="domicilios">DOMICILIOS: (034)5140913 - (034)5129421.</strong></span>
+                            
+                            <br><br>En nuestra tienda encontrarás un sitio con todo lo relacionado al bienestar y
+                             salud del cuerpo. Manejamos: Adelgazantes, Homeopáticos, Vitaminas, Suplementos dietarios, 
+                             Esencias florales, Cosméticos marca Ana María, Belleza capilar y además encontraras ricuras para 
+                             deleitar tu paladar, deliciosa leche de soya y de almendras, ricas tortas integrales y dietéticas. 
+                             Galletería: gustosos zumos de uva y zanahoria. <br>
+                            <br> <span class ="domicilios">¡Visítanos para tener el gusto de atenderlos!...</span>
+                            
+                        </p>
+                    </li>
+                    
+                </ul>
+
+            </article>
+
+        </section> <!-- blog -->
+
+    </div>
+
+    <article class="articuloprincipal ">
+        <h2 class=" infoproductos centrar">RICURAS PARA DELEITAR SU PALADAR:</h2>
+
+            <div class="contenedor complemento ">
+                
+                
+                <p class="complentoparrafo"><span class="infoproductosdeleitar"><strong>¡Ven y visítanos!</strong></span> Prueba nuestras deliciosas
+                     leches de soya y de almendras, zumos de uva y de zanahoria, ricas tortas integrales y dietéticas, de chocolate,
+                 naranja, zanahoria etc, y una variedad de galletas entre ellas de coco y salvado. 
+                 También puedes deleitar los deliciosos panes de brevas, maltas, mr tea, agua, 
+                 refrescos, frutos secos, arándanos, chicharrines y otros más.</p>
+            </div>
+    </article>
+
+
+   
+
+    <div class="contenedor tres-columnas">
+
+        <article class="entrada-blog gallet">
+            <div class="tabla-precio bloque1">
+                <h1 class="tc">Tortas</h1>
+                        
+                        <ul>
+                            <li><i class="fas fa-check"></i> Integrales</li>
+                            <li><i class="fas fa-check"></i> Dietéticas</li>
+                            <li><i class="fas fa-check"></i> Naranja</li>
+                            <li><i class="fas fa-check"></i> Zanahoria</li>
+                        </ul>
+                
+            </div>
+        </article>
+
+        <article class="entrada-blog gallet">
+            <div class="tabla-precio bloque1">
+                <h1 class="tc">Leche</h1>
+                        
+                        <ul>
+                            <li><i class="fas fa-check"></i> De Soya</li>
+                            <li><i class="fas fa-check"></i> De Almendras</li>
+                            <li><i class="fas fa-check"></i> zumos de uva</li>
+                            <li><i class="fas fa-check"></i> y Zanahoria</li>
+                        </ul>
+                        
+            </div>
+        </article>
+
+        <article class="entrada-blog gallet">
+            <div class="tabla-precio bloque1">
+                <h1 class="tc">Galletería</h1>
+                        
+                <ul>
+                    <li><i class="fas fa-check"></i> de coco</li>
+                    <li><i class="fas fa-check"></i> de salvado</li>
+                    <li><i class="fas fa-check"></i> panes con brevas</li>
+                    <li><i class="fas fa-check"></i> frutos secos  </li>
+                </ul>
+                
+                
+            </div>
+        </article>
+    </div>
+        <div class="contenedor tres-columnas contenedortortas" >
+                        <article class="entrada-blog articulotortas">
+                            <div class="tabla-precio">
+                                <h1 class="tc">Tortas</h1>
+                                <img class="deleitar" src="img/tortazanahoria.jpg">
+                            </div>
+                        </article>
+
+                        <article class="entrada-blog articulotortas">
+                            
+                            <div class=" tabla-precio">
+                                <h1 class="tc">Leche de soya</h1>
+                                <img class="deleitar" src="img/leche1.jpg">
+                            </div>
+                        </article>
+
+                        <article class="entrada-blog articulotortas">
+                                <div class="tabla-precio">
+                                <h1 class="tc">Galletas</h1>
+                                <img class="deleitar" src="img/galletas1.jpg">
+                            </div>
+                        </article>
+        </div>
+
+
+        <!-- ***********************suplementos************************************  -->
+        <div class="contenedor tres-columnas suplementos ">
+        <article class="entrada-blog articlesuplementos">
+            <h1 class="tc">Vitaminas</h1>
+            <!--  medidas de la foto 7*4 -->
+            <div class="zoom">
+                <img src="img/vitaminas2.jpg">
+                <p class="parrafoseccion">Las Vitaminas son compuestos  imprescindibles para la vida, 
+                    ya que al ingerirlos de forma equilibrada y en dosis esenciales promueven el correcto funcionamiento fisiológico.</p>
+                <a href="productos.html">ver más</a>
+            </div>
+        </article>
+
+        <article class="entrada-blog articlesuplementos">
+            <h1 class="tc">Suplementos</h1>
+            <div class="zoom">
+                <img src="img/suplementos1.jpg">
+
+                <p class="parrafoseccion">Los Suplementos Dietarios son compuestos heterogéneos imprescindibles para la vida, 
+                    consumir en dosis esenciales promueven el correcto funcionamiento fisiológico.</p>
+                <a href="productos.html">ver más</a>
+            </div>
+        </article>
+
+        <article class="entrada-blog articlesuplementos">
+            <h1 class="tc">Homeopáticos</h1>
+            <div class="zoom">
+                <img src="img/homeopaticos1.jpg">
+
+                <p class="parrafoseccion">El origen de la medicina homeopática es su mayor parte vegetal y se basa en 
+                    la curación de una enfermedad con medicamentos que causen sus mismos síntomas en personas sanas.</p>
+                <a href="productos.html">ver más</a>
+            </div>
+        </article>
+        <article class="entrada-blog articlesuplementos">
+            <h1 class="tc">Esencias</h1>
+            <div class="zoom">
+                <img src="img/esenciafloral1.jpg">
+                <p class="parrafoseccion">Actúan en todos los seres vivos: humanos, animales y plantas. Son compatibles con los 
+                    tratamientos alternativos y alopáticos a los que no substituye.</p>
+                <a href="productos.html">Leer más</a>
+            </div>
+        </article>
+
+        <article class="entrada-blog articlesuplementos">
+            <h1 class="tc">Cosméticos</h1>
+            <div class="zoom">
+                <img src="img/dermocosmeticos1.jpg">
+
+                <p class="parrafoseccion">Polvo facial de arroz, cremas hidratantes, labiales, pestañinas y demás productos de la marca Ana Maria.</p>
+                <a href="productos.html">Leer más</a>
+            </div>
+        </article>
+
+        <article class="entrada-blog articlesuplementos">
+            <h1 class="tc">Belleza</h1>
+            <div class="zoom">
+                <img src="img/bellezacapilar1.jpg">
+
+                <p class="parrafoseccion">Para la Belleza Capilar en los últimos años se han sumado revolucionarios 
+                    productos cosméticos que ayudan al cuidado de la piel y del cabello.</p>
+                <a href="productos.html">Leer más</a>
+            </div>
+        </article>
+    
+</div>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2 class=" infoproductos centrar">¿NUESTRA TIENDA!</h2>
+    
+                <div class="carousel center-align">
+    
+                                
+    
+                        <div class="carousel-item">
+                            
+                                <img class="fotoslider" src="img/slider1.jpg" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                 
+                                    <img class="fotoslider" src="img/slider2.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            
+                                            <img class="fotoslider" src="img/slider3.jpg" alt="">
+                                                </div>
+                                                <div class="carousel-item">
+                                                  
+                                                    <img class="fotoslider" src="img/slider4.jpg" alt="">
+                                                        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <h2 class=" infoproductos centrar">¿COMO LLEGAR?</h2>
+    <div id="mapa" class="contenedor mapauno  ">mapa</div>
+    <script src="js/app.js"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+<footer>
+
+    <p> <span class="elaborada">&copy; Derechos Reservados 2020 La Mies <br> Elaborada por: Alexander Zabala - contacto 304 598 91 63 &copy;</span>
+
+        <a href="#" class="subir">Ir arriba</a></p>
+
+</footer>
+
+</html>
